@@ -34,19 +34,19 @@ This document tracks the implementation roadmap for building an enterprise-grade
 - [x] Add badge to README (tests passing, license)
 
 ### Core Contracts (Protocols)
-- [ ] Create `core/__init__.py`
-- [ ] Create `core/contracts.py` with:
-  - [ ] `ModeStrategy` protocol (prompt, parse methods)
-  - [ ] `LLMClient` protocol (complete method)
-  - [ ] `Store` protocol (load_context, save_result, append_log)
-  - [ ] Base classes for each protocol
-- [ ] Create `core/models.py` with Pydantic models:
-  - [ ] `Message` (id, role, content, ts)
-  - [ ] `SummaryResult` (mode, title, points, decisions, timeline, summary, metadata)
-  - [ ] `AttributedPoint` (text, source_msg_ids)
-  - [ ] `Decision` (decision, rationale, owner, date, source_msg_ids)
-  - [ ] `Task` (task, owner, due, priority, source_msg_ids)
-  - [ ] `Event` (timestamp, event, source_msg_ids)
+- [x] Create `core/__init__.py`
+- [x] Create `core/contracts.py` with:
+  - [x] `ModeStrategy` protocol (prompt, parse methods)
+  - [x] `LLMClient` protocol (complete method)
+  - [x] `Store` protocol (load_context, save_result, append_log)
+  - [x] Base classes for each protocol
+- [x] Create `core/models.py` with Pydantic models:
+  - [x] `Message` (id, role, content, ts)
+  - [x] `SummaryResult` (mode, title, points, decisions, timeline, summary, metadata)
+  - [x] `AttributedPoint` (text, source_msg_ids)
+  - [x] `Decision` (decision, rationale, owner, date, source_msg_ids)
+  - [x] `Task` (task, owner, due, priority, source_msg_ids)
+  - [x] `Event` (timestamp, event, source_msg_ids)
 
 ### Skeleton Structure
 - [ ] Create directory structure: `modes/`, `llm/`, `stores/`, `preprocess/`, `cli/`, `integrations/`, `eval/`, `docs/`
